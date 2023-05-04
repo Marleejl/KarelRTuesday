@@ -21,7 +21,6 @@ def task()
   karel.move
   karel.put_beeper
   karel.move
-#gfgfgfgfgfg
   karel.put_beeper
   karel.move
 end
