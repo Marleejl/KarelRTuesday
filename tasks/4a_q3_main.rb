@@ -10,9 +10,8 @@ require_relative "../karel/robota"
 # a task for a stair sweeper
 def task()
   
-  karel = MyRobot.new(3, 3, Robota::NORTH, 5)
-  karel.put_5_beepers
-  
+  karel = MyRobot.new(3, 3, Robota::NORTH, 25)
+  karel.put_5_rows_of_beepers
 
 end
 

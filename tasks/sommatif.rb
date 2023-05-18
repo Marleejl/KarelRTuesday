@@ -4,21 +4,24 @@
 
 $graphical = true
 
-require_relative "my_robot"
+require_relative "sommatif_1"
 require_relative "../karel/robota"
+include Turner
 
-# a task for a stair sweeper
+# a task for a sommatif1
 def task()
+   
   
-  karel = MyRobot.new(3, 3, Robota::NORTH, 5)
-  karel.put_5_beepers
+  karel = Sommatif1.new(3, 3, Robota::NORTH, 27)
+  karel.move
+  karel.put_7_beepers
+  karel.turn_left
   
-
 end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(8, 40) # (size, speed)
+     screen = window(15, 20) # (size, speed)
      screen.run do
        task
      end
